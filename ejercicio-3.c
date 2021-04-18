@@ -64,7 +64,7 @@ void freeMatrix(Matrix *m)      /* liberar espacio */
     m->width = m->height = 0;
 }
 
-// --------------------- Main ------------------------------------------------
+// --------------------- Main -----------------------------------------------
 
 void inputMatrix(Matrix *mx);
 

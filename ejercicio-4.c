@@ -48,7 +48,5 @@ void eliminar_repetidos(int *a, int a_size, Array *b)
                 insertArray(b,a[i]);
             }
         }
-
     }
-
 }
