@@ -33,7 +33,8 @@ int main() {
             if( i%j == 0 )
             {
                 printf("%5d mod %5d | %4d \n",i,j,i%j);
-                break;          /* Es multiplo del [2,9] */
+                break;          /* Es multiplo de uno de los
+                                 * numeros anteriores*/
             }
             else if (j+1 == i)  /* llego al final de los sin
                                  * encontrar un divisor */
