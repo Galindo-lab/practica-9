@@ -27,9 +27,9 @@ int main() {
     printf("Cuantos coeficientes desea ingresar: ");
     scanf("%d", &coef_size);
 
-    initArray(&eq, coef_size);
+    initArray(&eq, coef_size);  /* inicializar arreglo */
 
-    while(coef_size--)
+    while(coef_size--)          /* ingresar coeficientes */
     {
         printf("Coeficeinte del expoente %3d: ",coef_size);
         scanf("%d", &captura);
@@ -39,12 +39,15 @@ int main() {
     printf("Numero a evaluar:");
     scanf("%f",&num_eval);
 
-    horner(&eq, num_eval);
+    horner(&eq, num_eval);      /* evalua el numero
+                                 * ingresado*/
+
+    freeArray(&eq);             /* libera la memoria */
 
     return 0;
 }
 
-float horner(Array *coef , float x)
+float horner(Array *coef , float x) /* metodo de horner*/
 {
     float result = 0;
     for(int i=0;i < coef->used;i++)
